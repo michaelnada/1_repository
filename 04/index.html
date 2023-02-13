@@ -9,6 +9,7 @@
     <form action="https://script.google.com/macros/s/
     AKfycbzyGcZiX4JttzCJEafiyEd8XHR9TUNv_JeSRV2iyLYFT
     _ZwAOg8f2IDMKxP8wOj4BGPbg/exec" method="post">
+    <fieldset>
     <legend>感想欄</legend>
     <ul>
         <li>
@@ -22,7 +23,66 @@
             <input type="number" id="proficiency" 
             name="proficiency" min="1" max="10" value="10">
         </li>
+        <li>
+          <label for="thoughts">感想</label>
+          <textarea cols="29" rows="3" placeholder="ここに感想を入力"></textarea>
+      </li>
     </ul>
+    </fieldset>
+    <fieldset>
+    <legend>アンケート
+      <fieldset>
+      <legend>今までの課題の全体的な難易度</legend>
+      <ul>
+        <li>
+          <label for="easy">簡単だった</label>
+          <input type="radio" id="easy" name="difficulty" value="easy">
+        </li>
+        <li>
+          <label for="normal">普通だった</label>
+          <input type="radio" id="normal" name="difficulty" value="normal" checked>
+        </li>
+        <li>
+          <label for="difficult">難しかった</label>
+          <input type="radio" id="difficult" name="difficulty" value="difficult">
+        </li>
+      </ul>
+      </fieldset>
+      <fieldset>
+        <legend>今までの課題で提出が遅れた理由</legend>
+        <ul>
+          <li>
+            <label for="no">提出が遅れたことはない</label>
+            <input type="checkbox" id="no" name="reason" value="no" checked>
+          </li>
+          <li>
+            <label for="busy">他のことで忙しかった</label>
+            <input type="checkbox" id="busy" name="reason" value="busy">
+          </li>
+          <li>
+            <label for="laze">怠けていた</label>
+            <input type="checkbox" id="laze" name="reason" value="laze">
+          </li>
+          <li>
+            <label for="forgot">課題のことを忘れていた</label>
+            <input type="checkbox" id="forgot" name="reason" value="forgot">
+          </li>
+          <li>
+            <label for="others">その他</label>
+            <input type="checkbox" id="others" name="reason" value="others">
+          </li>
+        </ul>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>不明点があるときはDiscord上の #講義シリーズ2022-質問 
+          で質問できることを知っていましたか？</legend>
+          <select id="simple" name="simple">
+            <option selected>はい</option>
+            <option>いいえ</option>
+          </select>
+          
+      </fieldset>
     </form>
     
   </body>
